@@ -3,6 +3,9 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from .forms import UploadImageForm
 from django.core.files.storage import FileSystemStorage
+# from .forms import ImageUploadForm
+from django.conf import settings
+# from .opencv_dface import opencv_dface
 
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
